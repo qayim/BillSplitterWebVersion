@@ -1,0 +1,230 @@
+.ui-button {
+  width: 100%;
+  background: var(--main-color);
+  color: var(--font-light);
+}
+
+.title-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+}
+
+.title-card-icon__menu-btn {
+  flex-shrink: 0;
+}
+
+.title-card__text {
+  flex: 1;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--font-light);
+  text-align: center;
+}
+
+.title-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
+
+.title-card-icon__text {
+  flex: 1;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--font-light);
+}
+
+.title-card-icon__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.title-card-icon__icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 2px solid var(--font-light);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.input-card {
+  width: 100%;
+  max-width: 420px;
+  margin: 0.75rem 0;
+  padding: 1rem;
+  border: 2px solid var(--box-border);
+  border-radius: 20px;
+  background: var(--box-color);
+  color: var(--font-dark);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.input-card:focus {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
+}
+
+.input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(min(100%, 420px) - 2rem);
+  height: 88px;
+  margin: 1rem auto;
+  border: 5px solid var(--box-border);
+  border-radius: 20px;
+  background: var(--box-color);
+  cursor: pointer;
+}
+
+.medium-button {
+  width: calc(min(100%, 420px) - 2rem);
+  margin: 0.5rem auto;
+  padding: 0.85rem 1rem;
+  border: 5px solid var(--box-border);
+  border-radius: 20px;
+  background: var(--background);
+  color: var(--font-dark);
+  text-align: center;
+  font-weight: 600;
+}
+
+.medium-button--active {
+  background: var(--box-border);
+  color: var(--font-light);
+}
+
+.overall-total-card {
+  width: min(100%, 520px);
+  margin: 0.75rem auto;
+  padding: 1rem;
+  border: 2px solid var(--box-border);
+  border-radius: 20px;
+  background: var(--box-border);
+  color: var(--font-light);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.shared-expenses-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  width: min(100%, 520px);
+  margin: 0.75rem auto;
+}
+
+.shared-expenses-card__box {
+  padding: 0.85rem;
+  border: 2px solid var(--box-border);
+  border-radius: 20px;
+  background: var(--box-color);
+  color: var(--font-dark);
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.user-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem auto;
+  padding: 0.85rem;
+  width: min(100%, 520px);
+  border: 2px solid var(--font-dark);
+  border-radius: 20px;
+  background: var(--background);
+}
+
+.user-card__icon-box,
+.user-card__name,
+.user-card__total {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.user-card__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border: 2px solid var(--font-dark);
+  border-radius: 10px;
+}
+
+.user-card__name {
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--font-dark);
+}
+
+.user-card__total {
+  padding: 0.35rem 0.5rem;
+  border: 2px solid var(--font-dark);
+  border-radius: 20px;
+  font-weight: 700;
+  color: var(--font-dark);
+}
+
+.expenses-card {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.5rem auto;
+  padding: 0.85rem;
+  width: min(100%, 520px);
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  background: var(--background);
+}
+
+.expenses-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--font-dark);
+}
+
+.expenses-card__amount {
+  padding: 0.35rem 0.75rem;
+  border: 2px solid var(--font-dark);
+  border-radius: 20px;
+  font-weight: 700;
+  color: var(--font-dark);
+}
+
+.expenses-card__edit,
+.expenses-card__delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border: 2px solid var(--font-dark);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.user-card--dummy .user-card__icon-box,
+.user-card--dummy .user-card__delete,
+.expenses-card--dummy .expenses-card__edit,
+.expenses-card--dummy .expenses-card__delete {
+  cursor: default;
+}

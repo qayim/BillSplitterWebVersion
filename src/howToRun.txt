@@ -1,0 +1,9 @@
+Terminal
+1. Point to correct directory
+cd "/Users/eon/Documents/Personal Projects/BillSplitterWebVersion"
+
+2. Install packages
+npm install
+
+3. Start app
+npm run dev
